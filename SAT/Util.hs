@@ -7,6 +7,7 @@ import Control.Monad (liftM)
 
 import Satchmo.Boolean
 import Satchmo.Code
+import Satchmo.SAT
 
 instance (Decode c a, Ord k) => (Decode (M.Map k c) (M.Map k a)) where
     decode m = liftM M.fromList $ mapM decodeone $ M.toList m

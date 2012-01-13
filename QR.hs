@@ -14,6 +14,7 @@ import System.IO.Unsafe
 import Satchmo.Solver.Minisat
 import Satchmo.Boolean hiding (not)
 import Satchmo.Code
+import Satchmo.SAT
 
 import SAT.Util
 
